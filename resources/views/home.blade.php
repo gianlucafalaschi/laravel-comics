@@ -5,12 +5,20 @@
         <h1>Ciao sono il contenuto dell'homepage</h1>
 
         <div>
-            @foreach ($comics as $comic)
-                <div>
-                    <img src="{{$comic['thumb']}}" alt="">
+            <div class="container">
+                <div class="row">
+                    @foreach ($comics as $comic)
+                        <div class="col bg-black">
+                            <div class="card my-3" style="width: 18rem;">
+                                <img src="{{$comic['thumb']}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$comic['series']}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
-                <div>{{$comic['series']}}</div>
-            @endforeach
+            </div>
         </div>
     </div>
 @endsection
