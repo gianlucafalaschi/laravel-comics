@@ -23,3 +23,7 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('home');
+
+Route::get('/characters', function() {
+    return view('characters');
+})->name('characters');
