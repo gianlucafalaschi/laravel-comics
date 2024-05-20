@@ -1,0 +1,9 @@
+@use './partials/variables' as *;
+@use './partials/header';   // qui non ci sono variabili quindi c'e' bisogno di aggiungerlo con l'asterisco
+
+@import '~bootstrap/scss/bootstrap';
+
+
+h1 {
+    color: $brand_primary;
+}
