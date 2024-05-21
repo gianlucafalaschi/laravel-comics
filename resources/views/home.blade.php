@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Ciao sono il contenuto dell'homepage</h1>
+        <h1>CURRENT SERIES</h1>
 
         <div>
             <div class="container">
